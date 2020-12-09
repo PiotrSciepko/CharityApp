@@ -21,7 +21,7 @@
         </form>
     </div>
     <div class="bottom-line">
-        <span class="bottom-line--copy">Copyright &copy; 2020</span>
+        <span class="bottom-line--copy">Copyright &copy; charity-app-piotrs 2020</span>
         <div class="bottom-line--icons">
             <a href="#" class="btn btn--small"><img src="<c:url value="theme/images/icon-facebook.svg"/>"/></a>
             <a href="#" class="btn btn--small"><img src="<c:url value="theme/images/icon-instagram.svg"/>"/></a>
