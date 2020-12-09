@@ -18,7 +18,6 @@ public class HomeController {
     @GetMapping("/")
     public String homeAction(Model model){
         model.addAttribute("institutions", institutionRepository.findAll());
-        System.out.println(institutionRepository.findAll());
         return "/index";
     }
 }
