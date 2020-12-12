@@ -1,6 +1,8 @@
 function myFunction() {
-    let summary = document.querySelectorAll("div.form-section--column li");
+    let summaryText = document.querySelectorAll(".summary--text");
+    let summaryForm = document.querySelectorAll("div.form-section--column li");
 
+    let bags = document.querySelector("div.form-group.form-group--inline input[name='quantity']");
     let street = document.querySelector("div.form-group.form-group--inline input[name='street']");
     let city = document.querySelector("div.form-group.form-group--inline input[name='city']");
     let zipCode = document.querySelector("div.form-group.form-group--inline input[name='zipCode']");
@@ -8,11 +10,31 @@ function myFunction() {
     let pickUpTime = document.querySelector("div.form-group.form-group--inline input[name='pickUpTime']");
     let pickUpComment = document.querySelector("div.form-group.form-group--inline textarea[name='pickUpComment']");
 
-    summary[0].innerText = street.value;
-    summary[1].innerText = city.value;
-    summary[2].innerText = zipCode.value;
-    summary[3].innerText = pickUpDate.value;
-    summary[4].innerText = pickUpTime.value;
-    summary[5].innerText = pickUpComment.value;
+    if (bags.value == 1) {
+        summaryText[0].innerHTML = bags.value + " worek";
+    } else if (bags.value > 1 && bags.value < 5) {
+        summaryText[0].innerHTML = bags.value + " worki";
+    } else {
+        summaryText[0].innerHTML = bags.value + " worków";
+    }
+
+    summaryText[1].innerHTML = checked();
+    summaryForm[0].innerHTML = street.value;
+    summaryForm[1].innerHTML = city.value;
+    summaryForm[2].innerHTML = zipCode.value;
+    summaryForm[3].innerHTML = pickUpDate.value;
+    summaryForm[4].innerHTML = pickUpTime.value;
+    summaryForm[5].innerHTML = pickUpComment.value;
 }
 
+function checked() {
+    let categories = document.querySelectorAll("div.form-group.form-group--checkbox input[name='categories']");
+    let descriptions = document.querySelectorAll("div.form-group.form-group--checkbox span.description");
+    let categoriesSummary = "";
+    for (let i = 0; i < categories.length; i++) {
+        if (categories[i].checked == true) {
+            categoriesSummary += " " + descriptions[i].innerHTML + ", ";
+        }
+    }
+    return "Dary: " + categoriesSummary.slice(0, -2);
+}

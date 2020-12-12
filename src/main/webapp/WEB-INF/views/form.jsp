@@ -10,7 +10,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
+    <title>Charity App</title>
     <link rel="stylesheet" href="theme/css/style.css"/>
 </head>
 <body>
@@ -28,11 +28,11 @@
         </ul>
 
         <ul>
-            <li><a href="index.html" class="btn btn--without-border active">Start</a></li>
-            <li><a href="index.html#steps" class="btn btn--without-border">O co chodzi?</a></li>
-            <li><a href="index.html#about-us" class="btn btn--without-border">O nas</a></li>
-            <li><a href="index.html#help" class="btn btn--without-border">Fundacje i organizacje</a></li>
-            <li><a href="index.html#contact" class="btn btn--without-border">Kontakt</a></li>
+            <li><a href="/" class="btn btn--without-border active">Start</a></li>
+            <li><a href="/#steps" class="btn btn--without-border">O co chodzi?</a></li>
+            <li><a href="/#about-us" class="btn btn--without-border">O nas</a></li>
+            <li><a href="/#help" class="btn btn--without-border">Fundacje i organizacje</a></li>
+            <li><a href="/#contact" class="btn btn--without-border">Kontakt</a></li>
         </ul>
     </nav>
 
@@ -176,11 +176,11 @@
                             </label>
                         </div>
 
-<%--                        <div class="form-group form-group--inline">--%>
-<%--                            <label>--%>
-<%--                                Numer telefonu <input type="phone" name="phone"/>--%>
-<%--                            </label>--%>
-<%--                        </div>--%>
+                            <%--                        <div class="form-group form-group--inline">--%>
+                            <%--                            <label>--%>
+                            <%--                                Numer telefonu <input type="phone" name="phone"/>--%>
+                            <%--                            </label>--%>
+                            <%--                        </div>--%>
                     </div>
 
                     <div class="form-section--column">
@@ -218,16 +218,16 @@
                         <ul>
                             <li>
                                 <span class="icon icon-bag"></span>
-                                <span class="summary--text"
-                                >4 worki ubrań w dobrym stanie dla dzieci</span
-                                >
+                                <span class="summary--text">
+                                    4 worki ubrań w dobrym stanie dla dzieci
+                                </span>
                             </li>
 
                             <li>
                                 <span class="icon icon-hand"></span>
-                                <span class="summary--text"
-                                >Dla fundacji "Mam marzenie" w Warszawie</span
-                                >
+                                <span class="summary--text">
+                                    Dla fundacji "Mam marzenie" w Warszawie
+                                </span>
                             </li>
                         </ul>
                     </div>
@@ -239,7 +239,7 @@
                                 <li>Prosta 51</li>
                                 <li>Warszawa</li>
                                 <li>99-098</li>
-<%--                                <li>123 456 789</li>--%>
+                                    <%--                                <li>123 456 789</li>--%>
                             </ul>
                         </div>
 
