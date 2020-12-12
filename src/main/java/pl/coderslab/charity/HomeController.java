@@ -19,11 +19,16 @@ public class HomeController {
     }
 
     @GetMapping("/")
-    public String homeAction(Model model){
+    public String homeAction(Model model) {
         model.addAttribute("institutions", institutionRepository.findAll());
         model.addAttribute("quantityCount", donationRepository.quantityCount());
         model.addAttribute("quantityAll", donationRepository.quantityAll());
         return "/index";
+    }
+
+    @GetMapping("/confirm")
+    public String confirmAction() {
+       return "/form-confirmation";
     }
 
 }
