@@ -14,8 +14,10 @@ function myFunction() {
         summaryText[0].innerHTML = bags.value + " worek";
     } else if (bags.value > 1 && bags.value < 5) {
         summaryText[0].innerHTML = bags.value + " worki";
-    } else {
+    } else if (bags.value >= 5) {
         summaryText[0].innerHTML = bags.value + " worków";
+    } else {
+        summaryText[0].innerHTML = "";
     }
 
     summaryText[1].innerHTML = checked();

@@ -16,16 +16,16 @@
 <body>
 <header class="header--form-page">
     <nav class="container container--70">
-        <ul class="nav--actions">
-            <li class="logged-user">
-                Witaj Agata
-                <ul class="dropdown">
-                    <li><a href="#">Profil</a></li>
-                    <li><a href="#">Moje zbiórki</a></li>
-                    <li><a href="#">Wyloguj</a></li>
-                </ul>
-            </li>
-        </ul>
+        <%--        <ul class="nav--actions">--%>
+        <%--            <li class="logged-user">--%>
+        <%--                Witaj Agata--%>
+        <%--                <ul class="dropdown">--%>
+        <%--                    <li><a href="#">Profil</a></li>--%>
+        <%--                    <li><a href="#">Moje zbiórki</a></li>--%>
+        <%--                    <li><a href="#">Wyloguj</a></li>--%>
+        <%--                </ul>--%>
+        <%--            </li>--%>
+        <%--        </ul>--%>
 
         <ul>
             <li><a href="/" class="btn btn--without-border active">Start</a></li>
@@ -86,7 +86,8 @@
 
     <div class="form--steps-container">
         <div class="form--steps-counter">Krok <span>1</span>/4</div>
-        <form:form method="post" modelAttribute="donation">
+            <form:form method="post" modelAttribute="donation">
+                <div><center><form:errors path="street"/></center></div>
             <%--        <form action="form-confirmation.html" method="post">--%>
             <%--        <!-- STEP 1: class .active is switching steps -->--%>
             <div data-step="1" class="active">
@@ -163,7 +164,9 @@
                     <div class="form-section--column">
                         <h4>Adres odbioru</h4>
                         <div class="form-group form-group--inline">
-                            <label> Ulica <input type="text" name="street"/> </label>
+                            <label>
+                                Ulica <input type="text" name="street"/>
+                            </label>
                         </div>
 
                         <div class="form-group form-group--inline">
@@ -222,7 +225,6 @@
                                     4 worki ubrań w dobrym stanie dla dzieci
                                 </span>
                             </li>
-
                             <li>
                                 <span class="icon icon-hand"></span>
                                 <span class="summary--text">
@@ -253,7 +255,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="form-group form-group--buttons">
                     <button type="button" class="btn prev-step">Wstecz</button>
                     <button type="submit" class="btn">Potwierdzam</button>
